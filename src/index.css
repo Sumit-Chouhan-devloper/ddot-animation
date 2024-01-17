@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dot-text {
+  /* Add any common styles for the text elements here */
+  opacity: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.animate-text.text-1 {
+  animation: fadeIn 1s forwards 0s;
 }
+
+.animate-text.text-2 {
+  animation: fadeIn 1s forwards 1s;
+}
+
+.animate-text.text-3 {
+  animation: fadeIn 1s forwards 2s;
+}
+
+.animate-text.text-4 {
+  animation: fadeIn 1s forwards 3s;
+}
+
+.animate-text.text-5 {
+  animation: fadeIn 1s forwards 4s;
+}
+
+.animate-text.text-6 {
+  animation: fadeIn 1s forwards 5s;
+}
+
+.animate-text.text-7 {
+  animation: fadeIn 1s forwards 6s;
+}
+
+.animate-text.text-8 {
+  animation: fadeIn 1s forwards 7s;
+}
+.animate-text.text-9 {
+  animation: fadeIn 1s forwards 8s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
